@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sajaukto vārdu spēle</title>  
+    <link href = "style.css" rel="stylesheet"/>
  <script>
      var timeago_strings = {
          "unpublish": {
@@ -284,19 +285,7 @@
          <a id="3varditrigger" href="#3vardi" class="fancybox"></a>
      </div>
  
-     <div class="visuallyhidden">
-         <div class="lingo-popup-wrapper" id="3vardi">
-             
-             <div class="lingo-popup-text-box">
-                 <h1>Tev izdevās atminēt trīs vārdus, Tev ir iespēja reģistrēties balvai jau tagad!</h1>
-                 <p>Tu vari turpināt spēli, vai jau reģistrēties balvai - dāvanu kartei 30 eiro vērtībā no “DEPO” un “Lielās talkas” kokam - tūja.</p>
-                 <div id="register-now" class="lingo-word-register-now">
-                     <div class="lingo-word-line">
-                         <p>Reģistrēties balvai</p>
-                     </div>
-                 </div>
-             </div>
-         </div>
+   
      </div>
  
  </div><!-- lingo-container-box -->
@@ -308,24 +297,9 @@
              <p style="padding-left: 27px;">Uz sākumu</p>
          </div>
      </div>
-     <div id="register" class="lingo-word-register">
-         <div class="lingo-word-line">
-             <p>Reģistrēties balvai</p>
-         </div>
+    
      </div>
  </div><!-- lingo-bottom-buttons -->
- 
- <div class="lingo-register-box" style="display: none;">
-     <h1 class="lingo-change">Reģistrācija</h1>
-     <div class="lingo-info-text">
-         <p class="lingo-register-change">Tev tas izdevās. Agrāk, vai vēlāk, bet pareizā atbilde atrada ceļu pie Tevis. Lai piedalītos balvas izlozē, atstāj savu kontaktinformāciju zemāk:</p>
-     </div>
- </div>
- 
- <div class="lingo-register-bottom-text" style="display: none;">
-     <h3>Neaizmirsti pastāstīt draugiem!</h3>
- </div>
- 
  <div id="social" class="lingo-center-social" style="display: block;">
        <section class="article-social clearfix">
        
@@ -351,88 +325,22 @@
          var skaties_gallery_open_item = 0;
      </script>
      
-         <div class="skaties-open-gallery ">
-                 <div class="skaties-open-gallery-content-wrapper clearfix">
-             <div class="skaties-open-gallery-content">
-                 <div class="skaties-open-gallery-image">
-                     <div class="skaties-open-gallery-image-content">
-                         <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="0" height="0" class="skaties-open-gallery-image-image">
-                     </div>
-                     <div class="skaties-open-gallery-item-close">
-                         <a href="#" title="Aizvērt" class="skaties-open-gallery-close js-skaties-open-gallery-close"><i class="fac fac-times white"></i></a>
-                     </div>
-                     <div class="skaties-open-gallery-item-sharing">
-                         <div class="article-social">
-                             <!-- <p>Pastāsti draugiem:</p> -->
-                             <ul class="article-social-sharing nocount">
-                                 <li>
-                                     <a href="#" class="share-facebook" data-soc="Facebook"><span class="ir"></span> <span class="count"></span></a>
-                                 </li>
-                                 <li>
-                                     <a href="#" class="share-twitter" data-soc="Twitter"><span class="ir"></span> <span class="count"></span></a>
-                                 </li>
-                                 <li>
-                                     <a href="#" class="share-draugiem" data-soc="Draugiem"><span class="ir"></span> <span class="count"></span></a>
-                                 </li>
-                             </ul>
-                         </div>
+         
+               
                      </div>
  
                      <div class="skaties-open-gallery-item-description-voting">
                          <div class="skaties-open-gallery-item-copyright js-skaties-open-gallery-item-copyright"></div>
                          <div class="skaties-open-gallery-voting">
                              <a href="#" class="js-skaties-open-gallery-vote-up"><i class="fa fa-thumbs-up"></i> <span class="js-skaties-open-gallery-votes"></span></a>
-                             <!-- <a href="#" class="js-skaties-open-gallery-vote-down"><i class="fa fa-thumbs-up wfa-flip-horizontal"></i></a> -->
-                         </div>
-                     </div>
-                     <div class="skaties-open-gallery-item-nav js-skaties-open-gallery-item-nav">
-                         <a href="#" class="js-skaties-open-gallery-item-back"><i class="fac fac-angle-left white"></i></a>
-                         <a href="#" class="js-skaties-open-gallery-item-forward"><i class="fac fac-angle-right white"></i></a>
-                     </div>
- 
-                     <div class="skaties-open-gallery-item-thumbs js-skaties-open-gallery-item-thumbs">
-                         <div class="skaties-open-gallery-item-description-voting skaties-open-gallery-item-only-description">
-                             <div class="skaties-open-gallery-item-description js-skaties-open-gallery-item-description"></div>
-                         </div>
-                         <h2></h2>
-                         
-                         <div class="skaties-open-gallery-item-thumbs-center clearfix">
-                             <div class="skaties-open-gallery-item-thumbs-inner">
-                                 <ul class="clearfix" data-per-page="8"></ul>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="skaties-open-gallery-related js-skaties-open-gallery-related">
-                         <div class="js-skaties-open-gallery-related-wrapper">
-                             <a href="#" class="skaties-open-gallery-related-restart"><i class="fas fa-sync"></i> Skatīt atkārtoti</a>
-                             <div class="skaties-related-galleries clearfix">
-                                 <div class="skaties-related-gallery hidden">
-                                     <div class="skaties-related-gallery-title"><h6><a href="" class="title"></a> <span class="gallery"><i class="sfi sfi-photo"></i> <span></span></span> <a href="" class="comments"><i class="sfi sfi-comments"></i> <span></span></a></h6></div>
-                                     <div class="skaties-related-gallery-images clearfix">
-                                         <a href="" class="more">Vēl <strong></strong> <span>attēli</span></a>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
+                
                  </div>
              </div>
          </div>
      </div>
      <div class="visuallyhidden">
          <div class="skaties-video-popup column">
-             <div class="article-social">
-                 <ul class="article-social-sharing rounded nocount">
-                     <li>
-                         <a href="#" class="share-facebook"><span class="ir"></span> <span class="count"></span></a>
-                     </li>
-                     <li>
-                         <a href="#" class="share-twitter"><span class="ir"></span> <span class="count"></span></a>
-                     </li>
-                     <li>
-                         <a href="#" class="share-draugiem"><span class="ir"></span> <span class="count"></span></a>
-                     </li>
-                 </ul>
+ 
              </div>
              <h2></h2>
              <div class="popup-video-wrapper">
