@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vārdu spēle</title>  
+    <title>Sajaukto vārdu spēle</title>  
 
     <link href = "style.css" rel="stylesheet"/>
 </head>
@@ -15,7 +15,7 @@
         <div class="header">
             <h1>
                 <a href = "index.html"><!--Hiperlinks-->
-                Vārdu spēle
+                    Sajaukto vārdu spēle
                 </a>
             </h1>
 
@@ -39,14 +39,12 @@
         </div><!--Beidzās header-->
 
         <div class = "content2">
-            <h3 class ="virsraksts">Sveiks, </h3>
-            <p>Meklē vārdus sajauktajos burtos, tev ir 1 min laika!</p>
-            <p class = "llaiks" id="laiks_s">Laiks:</p>
-            <p class = "ppunkti" id="punkti">Punkti:0</p>
-            <p class = "vards" id="r_vards"> 
-                Vārds: 
+   
+            <p>Cik daudz vārdus spēj atminēt Tu? Pārbaudi savu vārdu krājumu un uzspēlē “Sajaukto vārda spēli”! Ja pareizi atminēsi vārdu, tas parādīsies zaļā krāsā, bet, ja kāds no burtiem parādās dzeltenas krāsas lauciņā – burts ir atrodams vārdā, bet neatrodas pareizajā vietā. Toties, ja kāds no burtiem parādās baltas krāsas lauciņā, tas nozīmē, ka tāda burta dotajā vārdā nebūs. Nekā sarežģīta!
+                
+               
             </p>
-            <button onclick = "var_izv()">Sākt spēli</button>
+           <a href="script_spele.html" onclick = "var_izv()">Sākt</a>
             <div class = "game">
                 <div class = "block" id="B0" onclick = "veiktGajienu('B0')"><div></div></div>
                 <div class = "block" id="B1" onclick = "veiktGajienu('B1')"><div></div></div>
@@ -58,13 +56,13 @@
                 <div class = "block" id="B7" onclick = "veiktGajienu('B7')"><div></div></div>
                 <div class = "block" id="B8" onclick = "veiktGajienu('B8')"><div></div></div>
             </div>
-            <button onclick = "parbaudit()">Pārbaudīt vārdu</button>
+            
              
         </div>
 
     </div><!--Beidzās wrapper-->
 
-<script src="script_spele.js">
+<script src="script_spele.html">
 </script>
 </body>
 </html>
