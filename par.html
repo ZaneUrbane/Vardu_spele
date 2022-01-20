@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vārdu spēle</title>  
+
+    <link href = "style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class = "wrapper">
+
+        <div class="header">
+            <h1>
+                <a href = "index.html"><!--Hiperlinks-->
+                Vārdu spēle
+                </a>
+            </h1>
+
+            <ul>
+                <li>
+                    <a href = "spele.html">
+                    Sākt spēli
+                    </a>
+                </li>
+                <li>
+                    <a href = "tops.html">
+                    Tops
+                    </a>
+                </li>
+                <li>
+                    <a href = "par.html">
+                        Noteikumi
+                    </a>
+                </li>
+            </ul>
+        </div><!--Beidzās header-->
+
+        <div class = "content">
+            <p>Sajaukto burtu spēle palīdzēs Tev attīstīt lasītprasmi un uzmanību, kā arī palielināt vārdu krājumu.</p>
+            <p>Spēles laiks ir 30 sekundes. Tev jāpaspēj atrast maksimāli daudz vārdus dotajās laikā.</p>
+            <p>Ievadi savu vārdu un vecumu, tad spied uz "Sākt" un sāc meklēt vārdus sajauktajos burtos!</p>
+            Vārds: <input id='vards'/>
+            <br />
+            Vecums: <input id='vecums'/>
+            <br />
+
+            <button onclick = "saktSpeli()">Sākt</button>   <!--saktSpeli() - funkcijas nosaukums-->
+        </div>
+
+    </div><!--Beidzās wrapper-->
+
+
+<script>
+    function saktSpeli()    //Funkcija
+    {
+        let vards = document.querySelector('#vards').value   //# jo id nevis class
+        let vecums = document.querySelector('#vecums').value
+        
+        console.log(vards)
+
+        //window.location='spele_v.html'
+
+        if(vards == '')
+        {
+            alert('Ievadi vārdu!')
+        }
+        else
+        {
+            //Pārejam uz failu spele.html, pievienojam informāciju
+            window.location='spele_v.html#'+vards+','+vecums  
+        }
+
+    }  //Beidzas saktSpeli() funkcija
+</script>
+</body>
+</html>

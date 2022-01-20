@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vārdu spēle</title>  
+
+    <link href = "style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class = "wrapper">
+
+        <div class="header">
+            <h1>
+                <a href = "index.html"><!--Hiperlinks-->
+                Vārdu spēle
+                </a>
+            </h1>
+
+            <ul>
+                <li>
+                    <a href = "spele.html">
+                    Sākt spēli
+                    </a>
+                </li>
+                <li>
+                    <a href = "tops.html">
+                    Tops
+                    </a>
+                </li>
+                <li>
+                    <a href = "par.html">
+                        Noteikumi
+                    </a>
+                </li>
+            </ul>
+        </div><!--Beidzās header-->
+
+        <div class = "content2">
+            <h3 class ="virsraksts">Sveiks, </h3>
+            <p>Meklē vārdus sajauktajos burtos, tev ir 1 min laika!</p>
+            <p class = "llaiks" id="laiks_s">Laiks:</p>
+            <p class = "ppunkti" id="punkti">Punkti:0</p>
+            <p class = "vards" id="r_vards"> 
+                Vārds: 
+            </p>
+            <button onclick = "var_izv()">Sākt spēli</button>
+            <div class = "game">
+                <div class = "block" id="B0" onclick = "veiktGajienu('B0')"><div></div></div>
+                <div class = "block" id="B1" onclick = "veiktGajienu('B1')"><div></div></div>
+                <div class = "block" id="B2" onclick = "veiktGajienu('B2')"><div></div></div>
+                <div class = "block" id="B3" onclick = "veiktGajienu('B3')"><div></div></div>
+                <div class = "block" id="B4" onclick = "veiktGajienu('B4')"><div></div></div>
+                <div class = "block" id="B5" onclick = "veiktGajienu('B5')"><div></div></div>
+                <div class = "block" id="B6" onclick = "veiktGajienu('B6')"><div></div></div>
+                <div class = "block" id="B7" onclick = "veiktGajienu('B7')"><div></div></div>
+                <div class = "block" id="B8" onclick = "veiktGajienu('B8')"><div></div></div>
+            </div>
+            <button onclick = "parbaudit()">Pārbaudīt vārdu</button>
+             
+        </div>
+
+    </div><!--Beidzās wrapper-->
+
+<script src="script_spele.js">
+</script>
+</body>
+</html>
