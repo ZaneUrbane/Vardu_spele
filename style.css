@@ -121,9 +121,9 @@
   
   
   a {
-    color: #1EAEDB; }
+    color: #30b47d; }
   a:hover {
-    color: #0FA0CE; }
+    color: #52a57c; }
   
   
   
@@ -144,9 +144,9 @@
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
-    background-color: teal;
+    background-color: rgb(27, 148, 104);
     border-radius: 4px;
-    border: 1px solid #bbb;
+    border: 1px solid rgb(80, 73, 73);
     cursor: pointer;
     box-sizing: border-box; }
   .button:hover,
@@ -198,7 +198,7 @@
     height: 38px;
     padding: 6px 10px; 
     background-color:lightslategray;
-    border: 1px solid #D1D1D1;
+    border: 1px solid #443e3e;
     border-radius: 4px;
     box-shadow: none;
     box-sizing: border-box; }
